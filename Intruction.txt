@@ -1,0 +1,28 @@
+This is the C++ project of CS3113 Assignment #2
+Space Invader
+Profesoor Ivan Safrin
+Author Beihong Chen
+
+
+*The files in folder named backups are not neccessary to use for the program.*
+
+Victory condition:
+Destory all enemy ships.
+
+Controll:
+1. RIGHT for moving right
+2. LEFT for moving left
+3. UP on main menu to enter the game
+4. DOWN on end menu to restart the game
+5. Both enemy ships and player ship can fire steady. No need to press any buttons.
+6. Approximately, 1.5 second gap between player fire and 1.0 second between enemy fire.
+
+Defeated condition:
+1. Hit by an enemy ship.
+2. Hit by a bullet fired by an enemy ship.
+3. One of the enemy ship goes below the screen, y <= -1.0
+
+Other notice:
+1.All the rocks/blocks are 5 lifes which are able to absorb 5 bullets fired both by enemies and player.
+2.If any enemy hits blocks, the ship will destory and the blocks will do so.
+3.I made bullet bullet collision dectection but seems there is some memory issues there, so I did not use it, however, according to my design, its super difficult to make a such collsion.
