@@ -231,6 +231,7 @@ private:
 	int enemy_fire_count_down;
 	int score;
 	int survive;
+	bool player_shoot;
 	float timeStart_enemy;
 	float timeStart_player;
 	float elapsed;
@@ -240,7 +241,7 @@ private:
 	vector<Explosion*> explodes;
 	vector<SheetSprite> other_ship;
 	gameState scene;
-	SDL_Event event;
+	//SDL_Event event;
 	SDL_Window* displayWindow;
 
 public:
@@ -629,7 +630,7 @@ void Game::intialize()
 	enemy_fire_count_down = 0.3;
 	score = 0;
 	timeStart_enemy = 1.5;
-	timeStart_player = 1.0;
+	timeStart_player = 0.5;
 	scene = MENU;
 	unsigned int testSheet = LoadTexture("sheet.png");
 	unsigned int font1 = LoadTexture("font1.png");
@@ -669,13 +670,21 @@ void Game::intialize()
 
 void Game::MENU_render()
 {
-	if (event.type == SDL_KEYDOWN)
+	SDL_Event event;
+	while (SDL_PollEvent(&event))
 	{
-		if (event.key.keysym.scancode == SDL_SCANCODE_UP)
+		if (event.type == SDL_QUIT || event.type == SDL_WINDOWEVENT_CLOSE)
 		{
-			scene = GAME;
+			done = true;
 		}
-	}	
+		if (event.type == SDL_KEYDOWN)
+		{
+			if (event.key.keysym.scancode == SDL_SCANCODE_UP)
+			{
+				scene = GAME;
+			}
+		}
+	}
 	glClear(GL_COLOR_BUFFER_BIT);
 	DrawText(font[0], "SPACE INVADER", 0.15, 0.0, 1.0, 1.0, 1.0, 1.0, -0.9, 0.3);
 	DrawText(font[0], "PRESS UP", 0.1, 0.0, 1.0, 1.0, 1.0, 1.0, -0.35, -0.3);
@@ -685,34 +694,52 @@ void Game::MENU_render()
 
 void Game::GAME_render()
 {
-	if (event.type == SDL_KEYDOWN)
+	SDL_Event event;
+	while (SDL_PollEvent(&event))
 	{
-		if (event.key.keysym.scancode == SDL_SCANCODE_RIGHT)
+		if (event.type == SDL_QUIT || event.type == SDL_WINDOWEVENT_CLOSE)
 		{
-			if (x_position_player_ship <= 0.92)
+			done = true;
+		}
+		else if (event.type == SDL_KEYDOWN)
+		{
+			if (event.key.keysym.scancode == SDL_SCANCODE_UP)
 			{
-				other_ship[0].Draw(x_position_player_ship += 0.0005, -0.8, 0, 1);
-			}
-			else
-			{
-				other_ship[0].Draw(x_position_player_ship, -0.8, 0, 1);
+				if ((timeStart_player) <= 0.0)
+				{
+					player_fire();
+					timeStart_player = 0.5;
+				}
 			}
 		}
-		if (event.key.keysym.scancode == SDL_SCANCODE_LEFT)
+		else
 		{
-			if (x_position_player_ship >= -0.92)
-			{
-				other_ship[0].Draw(x_position_player_ship -= 0.0005, -0.8, 0, 1);
-			}
-			else
-			{
-				other_ship[0].Draw(x_position_player_ship, -0.8, 0, 1);
-			}
+			other_ship[0].Draw(x_position_player_ship, -0.8, 0, 1);
 		}
 	}
-	else
+	const Uint8 *keys = SDL_GetKeyboardState(NULL);
+
+	if (keys[SDL_SCANCODE_LEFT])
 	{
-		other_ship[0].Draw(x_position_player_ship, -0.8, 0, 1);
+		if (x_position_player_ship <= 0.92)
+		{
+			other_ship[0].Draw(x_position_player_ship -= 0.0005, -0.8, 0, 1);
+		}
+		else
+		{
+			other_ship[0].Draw(x_position_player_ship, -0.8, 0, 1);
+		}
+	}
+	else if (keys[SDL_SCANCODE_RIGHT])
+	{
+		if (x_position_player_ship >= -0.92)
+		{
+			other_ship[0].Draw(x_position_player_ship += 0.0005, -0.8, 0, 1);
+		}
+		else
+		{
+			other_ship[0].Draw(x_position_player_ship, -0.8, 0, 1);
+		}
 	}
 	glClear(GL_COLOR_BUFFER_BIT);
 	DrawText(font[0], "SCORE", 0.1, 0.00005, 1.0, 1.0, 1.0, 1.0, -0.7, 0.9);
@@ -749,8 +776,14 @@ void Game::END_render()
 	DrawText(font[0], "FOR", 0.1, 0.00005, 1.0, 1.0, 1.0, 1.0, -0.15, 0.1);
 	DrawText(font[0], "PLAY", 0.1, 0.00005, 1.0, 1.0, 1.0, 1.0, -0.2, -0.1);
 	DrawText(font[0], "PRESS DOWN TO START AGAIN", 0.05, 0, 1.0, 1.0, 1.0, 1.0, -0.6, -0.3);
-	if (event.type == SDL_KEYDOWN)
+	SDL_Event event;
+	while (SDL_PollEvent(&event))
 	{
+		if (event.type == SDL_QUIT || event.type == SDL_WINDOWEVENT_CLOSE)
+		{
+			done = true;
+		}
+		else if (event.type == SDL_KEYDOWN)
 		if (event.key.keysym.scancode == SDL_SCANCODE_DOWN)
 		{
 			reset();
@@ -761,13 +794,6 @@ void Game::END_render()
 
 void Game::render()
 {
-	while (SDL_PollEvent(&event)) 
-	{
-		if (event.type == SDL_QUIT || event.type == SDL_WINDOWEVENT_CLOSE)
-		{
-			done = true;
-		}
-	}
 	switch (scene)
 	{
 		case (MENU) :
@@ -799,16 +825,11 @@ void Game::update()
 	if (scene == GAME)
 	{
 		timeStart_enemy -= elapsed;
+		timeStart_player -= elapsed;
 		if ((timeStart_enemy) <= 0.0)
 		{
 			enemy_fire();
 			timeStart_enemy = 1.0;
-		}
-		timeStart_player -= elapsed;
-		if ((timeStart_player) <= 0.0)
-		{
-			player_fire();
-			timeStart_player = 1.5;
 		}
 		victory();
 		explosion_out_of_time();

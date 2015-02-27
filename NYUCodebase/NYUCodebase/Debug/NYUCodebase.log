@@ -1,65 +1,65 @@
-﻿Build started 2015/2/26 11:31:38.
+﻿Build started 2015/2/26 21:19:41.
      1>Project "C:\Users\bchen_000\Desktop\CS3113\HW3\NYUCodebase\NYUCodebase\NYUCodebase.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\SDL2\include /IC:\SDL2_image\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(99): warning C4305: 'initializing' : truncation from 'double' to 'GLfloat'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(143): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(162): warning C4244: 'argument' : conversion from 'double' to 'GLsizei', possible loss of data
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(275): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(294): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(301): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(308): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(323): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(328): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(337): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(100): warning C4305: 'initializing' : truncation from 'double' to 'GLfloat'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(144): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(163): warning C4244: 'argument' : conversion from 'double' to 'GLsizei', possible loss of data
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(277): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(296): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(303): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(310): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(325): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(330): warning C4305: 'argument' : truncation from 'double' to 'float'
      1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(339): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(366): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(409): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(452): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(458): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(468): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(472): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(496): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(520): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(521): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(341): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(368): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(411): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(454): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(460): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(470): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(474): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(498): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(522): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(531): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(532): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(541): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(545): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(553): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(559): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(565): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(575): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(576): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(523): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(524): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(533): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(534): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(543): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(547): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(555): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(561): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(567): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(577): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(584): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(619): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(620): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(578): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(579): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(586): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
      1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(621): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(628): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(679): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(680): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(681): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(693): warning C4305: '+=' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(693): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(697): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(704): warning C4305: '-=' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(704): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(708): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(714): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(622): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(623): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(630): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(689): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(690): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(691): warning C4305: 'argument' : truncation from 'double' to 'float'
      1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(717): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(718): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(719): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(726): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(728): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(730): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(734): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(726): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(726): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(730): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(737): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(737): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(741): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(745): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(746): warning C4305: 'argument' : truncation from 'double' to 'float'
      1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(747): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(748): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(749): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(750): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(754): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(756): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(758): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(762): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(775): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(776): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(777): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\bchen_000\desktop\cs3113\hw3\nyucodebase\nyucodebase\main.cpp(778): warning C4305: 'argument' : truncation from 'double' to 'float'
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\bchen_000\Desktop\CS3113\HW3\NYUCodebase\Debug\NYUCodebase.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib OpenGL32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\bchen_000\Desktop\CS3113\HW3\NYUCodebase\Debug\NYUCodebase.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\bchen_000\Desktop\CS3113\HW3\NYUCodebase\Debug\NYUCodebase.lib" /MACHINE:X86 Debug\main.obj
          NYUCodebase.vcxproj -> C:\Users\bchen_000\Desktop\CS3113\HW3\NYUCodebase\Debug\NYUCodebase.exe
@@ -67,4 +67,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.27
+Time Elapsed 00:00:01.39
